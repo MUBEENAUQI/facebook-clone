@@ -1,0 +1,267 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  height: 82px;
+  border-bottom: 1px solid #133783;
+  background: #3b5998;
+}
+
+.header {
+  width: 992px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.name {
+  width: 50%;
+  float: left;
+}
+
+.login_info {
+  width: 50%;
+  float: left;
+}
+.name img {
+  padding-top: 9px;
+  padding-bottom: 2px;
+  height: 40px;
+  width: 200px;
+}
+.header label {
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 13px;
+  padding-top: 2px;
+}
+.email {
+  float: left;
+}
+.email label {
+  padding-bottom: 10px;
+}
+.email input[type="text"] {
+  height: 20px;
+  width: 150;
+  border: 1px solid #1d2a5b;
+}
+.password {
+  float: left;
+  margin-left: 15px;
+}
+.password a {
+  color: #8fb1d8;
+  text-decoration: none;
+}
+.password a:hover {
+  text-decoration: underline;
+}
+
+.password label {
+  padding-bottom: 10px;
+}
+.password input[type="password"] {
+  height: 20px;
+  width: 150;
+  border: 1px solid #1d2a5b;
+  font-weight: bold;
+}
+.login_button {
+  float: left;
+  padding-top: 15px;
+}
+.login_button input[type="submit"] {
+  background: #4267b2;
+  margin-left: 15px;
+  border: 1px solid #29487d;
+  border-radius: 2px;
+  color: white;
+  height: 25px;
+  width: 80px;
+}
+.clearfix {
+  clear: both;
+}
+.intro_block {
+  width: 992px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.connect_info {
+  margin-top: 30px;
+}
+.connect_info p {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.connect_info {
+  float: left;
+}
+.create_account {
+  float: left;
+}
+.container {
+  background: linear-gradient(white, #d9ddeb);
+  overflow: hidden;
+}
+.connect_info img {
+  width: 10 px;
+}
+.create_account h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Helvetica;
+}
+#info {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: Helvetica;
+}
+.account_details input[type="text"] {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #bdc7d8;
+}
+
+.account_details input[type="password"] {
+  margin-bottom: 15px;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #bdc7d8;
+  margin-left: 0px;
+}
+
+.account_details .mob input[type="text"] {
+  width: 100% !important;
+}
+#bday {
+  color: #959599;
+  font-family: Helvetica;
+  font-size: 17px;
+  padding-bottom: 5px;
+}
+select#d {
+  height: 27px;
+  border: 1px solid #bdc7d8;
+}
+select#m {
+  height: 27px;
+  border: 1px solid #bdc7d8;
+}
+select#y {
+  height: 27px;
+  border: 1px solid #bdc7d8;
+}
+.gender h3 {
+  color: #959599;
+  font-family: Helvetica;
+  font-size: 17px;
+  padding-top: 10px;
+}
+.gender {
+  padding-bottom: 15px;
+}
+.end_info {
+  color: #959599;
+  font-family: Helvetica;
+  font-size: 10px;
+  line-height: 15px;
+}
+.end_info a {
+  text-decoration: none;
+  font-family: Helvetica;
+}
+.end_info a:hover {
+  text-decoration: underline;
+}
+.signup {
+  padding: 10px 60px;
+  background: linear-gradient(#67ae55, #578843);
+  border: 1px solid #3b6e22;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+#ls {
+  color: #365899;
+  display: inline-block;
+  margin: 5px;
+  margin-left: 0px;
+  min-width: 80px;
+  text-decoration: none;
+}
+#ls:hover {
+  text-decoration: underline;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
